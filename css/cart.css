@@ -1,0 +1,180 @@
+@import url(reset.css);
+@import url(utilities.css);
+@import url(header.css);
+@import url(banner_bg.css);
+@import url(footer.css);
+
+/* ---------------上方進度條 ---------------*/
+.banner {
+  background-image: url(../img/cart_banner_bg.jpg);
+}
+.banner h2 {
+  color: white;
+}
+.sub_title {
+  font-size: 36px;
+}
+.project {
+  padding-top: 32px;
+  background-color: #fff;
+  height: 180px;
+}
+
+.progress_bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+}
+.progress_bar li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  background-color: #5b5353;
+  border-radius: 50%;
+  position: relative;
+  font-size: 30px;
+  color: #f5f5f5;
+}
+
+.progress_bar li a {
+  display: block;
+  color: #d9d9d9;
+}
+
+.progress_bar li + li {
+  margin-left: 100px;
+}
+.progress_bar li + li::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #5b5353;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: -100px;
+  margin: auto;
+}
+.progress_bar li.active ~ li {
+  background-color: #dcdcdc;
+}
+.progress_bar li.active ~ li a {
+  color: #5b5353;
+}
+.progress_bar li.active ~ li::before {
+  background-color: #d9d9d9;
+}
+
+@media screen and (max-width: 428px) {
+  .progress_bar li + li {
+    margin-left: 80px;
+  }
+  .progress_bar li + li::before {
+    width: 80px;
+    left: -80px;
+  }
+}
+
+/* ------購物車清單---- */
+.shoppingCart {
+  padding: 60px 0;
+}
+
+.shoppingCart-table {
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .overflowWrap {
+    overflow-x: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .shoppingCart-table {
+    width: 600px;
+  }
+}
+.table-title {
+  font-size: 20px;
+}
+
+.shoppingCart-table th,
+.shoppingCart-table td {
+  vertical-align: middle;
+  padding: 15px;
+}
+
+.cart_list tr:first-child {
+  border-top: 1px solid #dcdcdc;
+}
+.cart_list tr {
+  border-bottom: 1px solid #dcdcdc;
+}
+.cart_list .qty_td {
+  display: flex;
+  margin-top: 20px;
+}
+
+.cart_list .qty,
+.cart_list .minusQty,
+.cart_list .addQty {
+  display: block;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 18px;
+}
+.shoppingCart-table th {
+  text-align: left;
+}
+
+.cardItem-title {
+  display: flex;
+  align-items: center;
+}
+
+.cardItem-title img {
+  margin-right: 15px;
+  max-width: 80px;
+}
+
+.discardBtn {
+  text-align: right;
+}
+
+.checkout_btn {
+  display: block;
+  text-align: center;
+  border-radius: 2px;
+  width: 200px;
+  background-color: #5b5353;
+  color: #dcdcdc;
+  line-height: 50px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+.checkout_btn:hover {
+  background-color: #dcdcdc;
+  color: #5b5353;
+}
+
+/* -----------表尾----------- */
+.contact_us h2 {
+  font-size: 54px;
+}
+
+table {
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .right-form {
+    display: none;
+  }
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- webpage icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- myCSS -->
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <!------------------- header ------------------->
+    <header class="container">
+      <!-------------------- 左側選單 -------------------->
+      <div class="logo">
+        <!--------------------- logo --------------------->
+        <h1>
+          <a href="index.html"><img src="img/logo.png" alt="" /></a>
+        </h1>
+      </div>
+
+      <!------------------- 右側icon --------------------->
+      <div class="menu">
+        <!--------漢堡選單------>
+        <i class="fa-solid fa-bars fa-lg hamburger none"></i>
+        <!--------------------- 導覽列 --------------------->
+        <ul>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="contactus.html">CONSULT</a></li>
+          <li>
+            <a href="#" id="cartBtn"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+          <li>
+            <a href="signin.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!------------------- banner ------------------->
+    <div class="banner">
+      <div class="mask"><h2>Cart</h2></div>
+    </div>
+    <!-- 購物車側邊選單 -->
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <div class="overflowWrap">
+        <table class="shoppingCart-sideTable">
+          <tr>
+            <th width="10%" class="cart_title">Order Summary</th>
+            <th width="5%"></th>
+            <th width="8%"></th>
+            <th width="5%"></th>
+            <th width="5%"></th>
+          </tr>
+          <tbody class="cartRenderArea">
+            <tr>
+              <td>
+                <div class="cartItem-title">
+                  <img src="img/Rectangle 69.jpg" alt="" />
+                  <p>Classice Sofa</p>
+                </div>
+              </td>
+              <td>NT$12,000</td>
+              <td class="qty_ctrl">
+                <a href="#">-</a>
+                <a class="qty">1</a>
+                <a href="#">+</a>
+              </td>
+              <td>NT$12,000</td>
+              <td class="discardBtn_side">
+                <i class="fa-solid fa-trash-can"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cartItem-title">
+                  <img src="img/Rectangle 69.jpg" alt="" />
+                  <p>Classice Sofa</p>
+                </div>
+              </td>
+              <td>NT$12,000</td>
+              <td class="qty_ctrl">
+                <a href="#">-</a>
+                <a class="qty">1</a>
+                <a href="#">+</a>
+              </td>
+              <td>NT$12,000</td>
+              <td class="discardBtn_side">
+                <i class="fa-solid fa-trash-can"></i>
+              </td>
+            </tr>
+          </tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <p>Subtotal</p>
+            </td>
+            <td class="subtotal">NT$24,000</td>
+          </tr>
+        </table>
+        <a class="checkout_btn_side" href="cart.html">Check Out</a>
+      </div>
+    </div>
+    <!-------- 上方進度條------->
+    <div class="project">
+      <h2 class="sub_title">My Cart</h2>
+      <div class="progress_bar_area">
+        <ol class="progress_bar">
+          <li class="active">
+            <a href="cart.html">1</a>
+          </li>
+          <li>
+            <a href="cart_next.html">2</a>
+          </li>
+          <li><a href="cart_third.html">3</a></li>
+        </ol>
+      </div>
+    </div>
+    <!------------------- 購物車清單------------------->
+    <section class="shoppingCart">
+      <div class="overflowWrap">
+        <table class="shoppingCart-table">
+          <tr class="table-title">
+            <th width="50%">Product</th>
+            <th width="15%">Price</th>
+            <th width="15%">Quantity</th>
+            <th width="15%">Total</th>
+            <th width="5%"></th>
+          </tr>
+          <tbody class="cart_list">
+            <tr>
+              <td>
+                <div class="cardItem-title">
+                  <img src="img/Rectangle 69.jpg" alt="" />
+                  <p>Classice Sofa</p>
+                </div>
+              </td>
+              <td>NT$12,000</td>
+              <td>1</td>
+              <td>NT$12,000</td>
+              <td class="discardBtn">
+                <i class="fa-solid fa-xmark"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cardItem-title">
+                  <img src="img/Rectangle 70.jpg" alt="" />
+                  <p>Classice Sofa</p>
+                </div>
+              </td>
+              <td>NT$12,000</td>
+              <td>1</td>
+              <td>NT$12,000</td>
+              <td class="discardBtn">
+                <i class="fa-solid fa-xmark"></i>
+              </td>
+            </tr>
+          </tbody>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <p>Subtotal</p>
+            </td>
+            <td class="cart_subtotal">NT$24,000</td>
+          </tr>
+        </table>
+        <a href="cart_next.html" class="checkout_btn">Check Out</a></td>
+      </div>
+    </section>
+    <!------------------- 表尾預約表單 --------------------->
+    <div class="contact_us">
+      <div class="container">
+        <h2 class="sub_title">Contact Us</h2>
+        <div class="contact_us_content">
+          <!-- 左側聯絡資訊 -->
+          <div class="left-info">
+            <p class="form_text">
+              Addresss: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+            </p>
+            <p class="form_text">Tel: 0223840023</p>
+            <p class="form_text">Fax: 0223840024</p>
+            <p class="form_text">Email: home_office@gmail.com</p>
+            <p class="form_text">Mon - Fri : 09:00-18:00</p>
+            <div class="social_media_link">
+              <a href=""> <i class="fa-brands fa-square-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+          </div>
+          <!-- 右側表單 -->
+          <div class="right-form">
+            <form action="">
+              <ul>
+                <li>
+                  <label for="name">Name </label>
+                  <abbr title="required">*</abbr>
+                  <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                  <label for="email">Email </label>
+                  <abbr title="required">*</abbr>
+                  <input type="text" id="email" name="user_email" />
+                </li>
+                <li>
+                  <label for="phone">Phone </label>
+                  <abbr title="required">*</abbr>
+                  <input type="text" id="phone" name="user_phone" />
+                </li>
+                <li>
+                  <label for="message">Message </label>
+                  <textarea
+                    name="user_message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </li>
+              </ul>
+              <input type="submit" value="Submit" class="submit_btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------- 表尾 --------------------->
+    <footer>
+      <p>
+        本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。參考資源:
+        O&D home decor, the interior design corp.
+      </p>
+    </footer>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!------------JQ--------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(function () {
+        // 漢堡選單
+
+        $(".hamburger").click(function () {
+          console.log(123);
+          $(".menu ul").toggleClass("open");
+        });
+      });
+    </script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+@import url(reset.css);
+@import url(utilities.css);
+@import url(header.css);
+@import url(banner_bg.css);
+@import url(footer.css);
+
+.banner {
+  background-image: url(../img/shop_banner_bg.jpg);
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.mask {
+}
+.mask h2 {
+  color: white;
+}
+
+/* ----------------------篩選區 -------------------*/
+.select_area {
+  margin-top: 64px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0 10px;
+}
+
+.select_area li {
+  background-color: #dcdcdc;
+  margin-right: 10px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+.select_area li:last-child {
+  margin-right: 0;
+}
+.select_area a {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.select_area a:hover {
+  background-color: #5b5353;
+  color: #dcdcdc;
+}
+
+.filter_btn.active {
+  background-color: #5b5353;
+  color: #dcdcdc;
+}
+/* ----------------------產品列表 -------------------*/
+.product_area {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.product_list {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px 20px;
+}
+
+.product_item {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  /* box-shadow: 1px 1px 1px #dcdcdc; */
+  margin: 1.5%;
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.product_item:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.7s ease-in-out;
+}
+.product_item img {
+  width: 100%;
+  transition: all 0.7s;
+}
+
+.product_item img:hover {
+  transform: scale(1.03);
+  transition: all 0.7s;
+}
+
+.addToCart {
+  display: block;
+  cursor: pointer;
+}
+
+.fa-cart-plus:before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.product_detail {
+  padding: 15px;
+}
+.product_item .product_name {
+  font-size: 21px;
+  padding: 20px 20px 0;
+}
+
+.product_item .product_price {
+  font-size: 16px;
+  padding: 0 20px 20px;
+}
+
+.product_price::before {
+  content: "$";
+}
+
+@media screen and (max-width: 1000px) {
+  .product_list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .product_name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .product_name {
+    font-size: 14px;
+  }
+  .select_area {
+    margin-top: 32px;
+  }
+  .select_area a {
+    font-size: 21px;
+  }
+  .product_area {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .addToCart {
+    width: 100%;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .product_list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .right-form {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product_list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .select_area {
+    gap: 0 5px;
+  }
+  .select_area a {
+    padding: 15px;
+  }
+  .select_area a {
+    font-size: 18px;
+  }
+}

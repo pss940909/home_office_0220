@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- webpage icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- myCSS -->
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
+  <body>
+    <!------------------- header ------------------->
+    <header class="container">
+      <!-------------------- 左側選單 -------------------->
+      <div class="logo">
+        <!--------------------- logo --------------------->
+        <h1>
+          <a href="index.html"><img src="img/logo.png" alt="" /></a>
+        </h1>
+      </div>
+
+      <!------------------- 右側icon --------------------->
+      <div class="menu">
+        <!--------漢堡選單------>
+        <i class="fa-solid fa-bars fa-lg hamburger none"></i>
+        <!--------------------- 導覽列 --------------------->
+        <ul>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="contactus.html">CONSULT</a></li>
+          <li>
+            <a href="#" id="cartBtn"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+          <li>
+            <a href="signin.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!------------------- banner ------------------->
+    <div class="banner" data-aos="fade-down" data-aos-duration="2500">
+      <div class="mask"><h2>About Us</h2></div>
+    </div>
+    <!-- 購物車側邊選單 -->
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <div class="overflowWrap">
+        <table class="shoppingCart-sideTable">
+          <tr>
+            <th width="10%" class="cart_title">Order Summary</th>
+            <th width="5%"></th>
+            <th width="8%"></th>
+            <th width="5%"></th>
+            <th width="5%"></th>
+          </tr>
+          <tbody class="cartRenderArea">
+            <tr>
+              <td>
+                <div class="cartItem-title">
+                  <img src="img/Rectangle 69.jpg" alt="" />
+                  <p>Classice Sofa</p>
+                </div>
+              </td>
+              <td>NT$12,000</td>
+              <td class="qty_ctrl">
+                <a href="#">-</a>
+                <a class="qty">1</a>
+                <a href="#">+</a>
+              </td>
+              <td>NT$12,000</td>
+              <td class="discardBtn_side">
+                <i class="fa-solid fa-trash-can"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cartItem-title">
+                  <img src="img/Rectangle 69.jpg" alt="" />
+                  <p>Classice Sofa</p>
+                </div>
+              </td>
+              <td>NT$12,000</td>
+              <td class="qty_ctrl">
+                <a href="#">-</a>
+                <a class="qty">1</a>
+                <a href="#">+</a>
+              </td>
+              <td>NT$12,000</td>
+              <td class="discardBtn_side">
+                <i class="fa-solid fa-trash-can"></i>
+              </td>
+            </tr>
+          </tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <p>Subtotal</p>
+            </td>
+            <td class="subtotal">NT$24,000</td>
+          </tr>
+        </table>
+        <a href="cart.html" class="checkout_btn_side">Check Out</a>
+      </div>
+    </div>
+    <!------------------- brand concept ------------------->
+    <div class="brand">
+      <h2 class="sub_title" data-aos="fade-down" data-aos-duration="1500">
+        BRAND CONCEPT
+      </h2>
+      <div class="first_area">
+        <div class="first_img" data-aos="fade-up" data-aos-duration="1500">
+          <div
+            class="first_decoline"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          ></div>
+        </div>
+        <div class="first_text" data-aos="fade-down" data-aos-duration="1500">
+          <p>
+            Home Office Interiror Design Co. was founded on the premise that
+            design can be utilized not only to make spaces more aesthetically
+            pleasing, but also to make spaces more functional. It is our firm
+            belief that the end users should be at the center of any design
+            process.
+          </p>
+        </div>
+      </div>
+      <div class="second_area">
+        <div class="second_img" data-aos="fade-up" data-aos-duration="1500">
+          <div
+            class="second_decoline"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          ></div>
+        </div>
+        <div class="second_text" data-aos="fade-down" data-aos-duration="1500">
+          <p>
+            Our philosophy is that understanding customer’s needs is the key to
+            designing innovative and working spaces. We pride ourselves on being
+            able to uncover the essence of our clients’ design inspiration, and
+            use this to turn offices into homes and corporate buildings into
+            inspirational workspaces.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!------------------- Project Process ------------------->
+    <!-------- 上方進度條------->
+    <div class="project">
+      <h2 class="sub_title" data-aos-easing="linear" data-aos-duration="1500">
+        PROJECT PROCESS
+      </h2>
+      <div
+        class="progress_bar_area"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
+        <ol class="progress_bar">
+          <li
+            class="progress_tab active"
+            id="defaultOpen"
+            onclick="openStage(event, 'stage1')"
+          >
+            1
+          </li>
+          <li class="progress_tab" onclick="openStage(event, 'stage2')">2</li>
+          <li class="progress_tab" onclick="openStage(event, 'stage3')">3</li>
+          <li class="progress_tab" onclick="openStage(event, 'stage4')">4</li>
+        </ol>
+      </div>
+    </div>
+    <!-------- 下方process------->
+    <div class="progress_panel">
+      <div class="process container" id="stage1">
+        <div
+          class="process_text"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <h3 class="sub_title">Stage 1</h3>
+          <h4 class="stage_name">Initial Concept</h4>
+          <p>
+            During the first initial consultation, we establish your brief and
+            aspirations for the project. We also briefly discuss the scope of
+            work and your budget. After the consultation, we then prepare space
+            planning options and initial interior concepts and preliminary
+            selections of finishes, fixtures, furniture & lighting for you. The
+            final goal of stage 1 is to develop a conceptual design direction
+            that responds to both the aesthetic and functional requirements.
+          </p>
+        </div>
+        <div
+          class="process_img"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <img src="img/stage1.png" alt="stage1" />
+        </div>
+      </div>
+      <div class="process container" id="stage2">
+        <div
+          class="process_text"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <h3 class="sub_title">Stage 2</h3>
+          <h4 class="stage_name">Design Deveploment</h4>
+          <p>
+            Once the first conceptual stage is approved, we will proceed onto a
+            more thorough process where the initial ideas is crafted into a
+            unique design. In second stage we develop and present plans and
+            elevations of key areas, lighting design layouts and fittings, and
+            schematic designs of features, including staircases, fireplaces etc.
+          </p>
+        </div>
+        <div
+          class="process_img"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <img src="img/stage2.png" alt="stage2" />
+        </div>
+      </div>
+      <div class="process container" id="stage3">
+        <div
+          class="process_text"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <h3 class="sub_title">Stage 3</h3>
+          <h4 class="stage_name">Construction</h4>
+          <p>
+            This is the stage where the approved design starts to becomes a
+            reality. During this process we collaborate with other consultants -
+            architects, landscape architects etc. After final sign off on the
+            documentation and costing, our drawings and schedules are issued for
+            construction. We attend site and client meetings to ensure the
+            design is executed to plan!
+          </p>
+        </div>
+        <div
+          class="process_img"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <img src="img/stage3.png" alt="stage3" />
+        </div>
+      </div>
+      <div class="process container" id="stage4">
+        <div
+          class="process_text"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <h3 class="sub_title">Stage 4</h3>
+          <h4 class="stage_name">Your Finished Office.</h4>
+          <p>
+            We project manage all aspects of transforming your workspace. As the
+            project comes to completion, we focus on the procurements of
+            furnishings including quality control of all furnishings procured,
+            installation of window furnishings and artwork, decor and
+            accessories placement Watching this process finally come together is
+            the most exciting part of the project.
+          </p>
+        </div>
+        <div
+          class="process_img"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <img src="img/stage4.png" alt="stage4" />
+        </div>
+      </div>
+    </div>
+    <!------------------- 表尾預約表單 --------------------->
+    <div class="contact_us">
+      <div class="container">
+        <h2 class="sub_title">Contact Us</h2>
+        <div class="contact_us_content">
+          <!-- 左側聯絡資訊 -->
+          <div class="left-info">
+            <p class="form_text">
+              Addresss: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+            </p>
+            <p class="form_text">Tel: 0223840023</p>
+            <p class="form_text">Fax: 0223840024</p>
+            <p class="form_text">Email: home_office@gmail.com</p>
+            <p class="form_text">Mon - Fri : 09:00-18:00</p>
+            <div class="social_media_link">
+              <a href=""> <i class="fa-brands fa-square-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+          </div>
+          <!-- 右側表單 -->
+          <div class="right-form">
+            <form action="">
+              <ul>
+                <li>
+                  <label for="name">Name </label>
+                  <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                  <label for="email">Email </label>
+                  <input type="text" id="email" name="user_email" />
+                </li>
+                <li>
+                  <label for="phone">Phone </label>
+                  <input type="text" id="phone" name="user_phone" />
+                </li>
+                <li>
+                  <label for="message">Message </label>
+                  <textarea
+                    name="user_message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </li>
+              </ul>
+              <input type="submit" value="Submit" class="submit_btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------- 表尾 --------------------->
+    <footer>
+      <p>
+        本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。參考資源:O&D
+        home decor, the interior design corp.
+      </p>
+    </footer>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!------------AOS--------------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!------------JQ--------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/addToCart.js"></script>
+    <script>
+      window.onload = function () {
+        AOS.init();
+        $(function () {
+          // 漢堡選單
+
+          $(".hamburger").click(function () {
+            console.log(123);
+            $(".menu ul").toggleClass("open");
+          });
+        });
+      };
+
+      function openStage(event, stageName) {
+        // 先宣告所有變數
+        let i, progress, progress_tab;
+        // 先將下方說明內容都清空
+        progress = document.querySelectorAll(".process");
+
+        progress.forEach(function (item) {
+          item.style.display = "none";
+        });
+
+        // 再將上方加入active的tab清空
+        progress_tab = document.querySelectorAll(".progress_tab");
+
+        progress_tab.forEach(function (item) {
+          item.className = item.className.replace("active", "");
+        });
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(stageName).style.display = "flex";
+        event.currentTarget.className += " active";
+      }
+
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>

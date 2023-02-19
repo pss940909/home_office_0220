@@ -1,0 +1,290 @@
+@import url(reset.css);
+@import url(utilities.css);
+@import url(header.css);
+@import url(banner_bg.css);
+@import url(footer.css);
+
+.banner {
+  background-image: url(../img/aboutus_banner_bg.jpg);
+  background-position: center center;
+}
+
+.banner h2 {
+  color: white;
+}
+.brand {
+  background-color: #f5f5f5;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.brand .sub_title {
+  text-align: left;
+  margin-left: 100px;
+}
+.first_area {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 100px;
+}
+.first_img {
+  width: 60%;
+  height: 435px;
+  position: relative;
+  background-image: url(../img/about_img.jpg);
+  background-position: center top;
+  flex-grow: 1;
+}
+
+.first_decoline {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #5b5353;
+  position: absolute;
+  top: 15px;
+  right: -15px;
+}
+.first_text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-left: 40px;
+}
+.first_text p {
+  font-size: 16px;
+  background-color: #fff;
+  width: 70%;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+/* --------------Second Area ------------*/
+
+.second_area {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  flex-direction: row-reverse;
+}
+.second_img {
+  width: 60%;
+  height: 435px;
+  position: relative;
+  background-image: url(../img/about_2nd_img.jpg);
+  background-position: center center;
+  flex-grow: 1;
+}
+
+.second_decoline {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #5b5353;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.second_text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: Roboto Condensed;
+  margin-right: 64px;
+}
+.second_text p {
+  font-size: 16px;
+  background-color: #fff;
+  width: 70%;
+  padding: 20px 30px;
+
+  margin-bottom: 20px;
+}
+/* ---------------上方進度條 ---------------*/
+.project {
+  padding-top: 32px;
+  background-color: #fff;
+  padding-bottom: 64px;
+}
+.project h2 {
+  font-size: 44px;
+}
+
+.progress_bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+}
+.progress_bar li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  color: #5b5353;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.progress_bar li.active {
+  background-color: #5b5353;
+  color: #f5f5f5;
+}
+
+.progress_bar li:hover {
+  background-color: #5b5353;
+  color: #f5f5f5;
+}
+
+.progress_bar li + li {
+  margin-left: 100px;
+}
+.progress_bar li + li::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #f5f5f5;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: -100px;
+  margin: auto;
+}
+
+/* ---------------下方stage說明區 ---------------*/
+.process {
+  display: flex;
+  padding: 0px 0 64px 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.process .process_text {
+  width: 50%;
+  box-sizing: border-box;
+}
+.process_text h3 {
+  text-align: left;
+  font-size: 36px;
+}
+.process_text h4 {
+  text-align: left;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.process .process_img {
+  width: 40%;
+  box-sizing: border-box;
+  padding-left: 5%;
+}
+.process .process_img img {
+  width: 60%;
+}
+
+@media screen and (max-width: 996px) {
+  .brand .sub_title {
+    margin-left: 0;
+    text-align: center;
+    font-size: 55px;
+  }
+  .process .process_text {
+    width: 40%;
+    box-sizing: border-box;
+  }
+  .process .process_img {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .process .process_img img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .brand .sub_title {
+    font-size: 48px;
+  }
+  .first_area {
+    display: flex;
+    flex-direction: column;
+  }
+  .first_img {
+    width: 80%;
+    margin: 0 auto 50px;
+    box-sizing: border-box;
+  }
+  .first_text {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .first_text p {
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .second_area {
+    flex-direction: column;
+  }
+  .second_img {
+    width: 85%;
+    margin: 0 auto 50px;
+  }
+  .second_text {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .second_text p {
+    width: 100%;
+    margin-bottom: 0;
+    box-sizing: border-box;
+  }
+
+  .progress_bar li + li {
+    margin-left: 30px;
+  }
+  .progress_bar li + li::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: #f5f5f5;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: -30px;
+    margin: auto;
+  }
+  .process {
+    flex-direction: column;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+  .process .process_text {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .process .process_img {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .process .process_img img {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .right-form {
+    padding-right: 0;
+    display: none;
+  }
+}

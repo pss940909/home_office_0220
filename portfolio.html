@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- webpage icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- myCSS -->
+    <link rel="stylesheet" href="css/portfolio.css" />
+  </head>
+  <body>
+    <!----------------- portfolio main  ----------------->
+    <header class="container">
+      <!-------------------- 左側選單 -------------------->
+      <div class="logo">
+        <!--------------------- logo --------------------->
+        <h1>
+          <a href="index.html"><img src="img/logo.png" alt="" /></a>
+        </h1>
+      </div>
+
+      <!------------------- 右側icon --------------------->
+      <div class="menu">
+        <!--------漢堡選單------>
+        <i class="fa-solid fa-bars fa-lg hamburger none"></i>
+        <!--------------------- 導覽列 --------------------->
+        <ul>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="contactus.html">CONSULT</a></li>
+          <li>
+            <a href="#" id="cartBtn"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+          <li>
+            <a href="signin.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!----------------- 購物車側邊選單 ----------------->
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <div class="overflowWrap">
+        <table class="shoppingCart-sideTable">
+          <tr>
+            <th width="10%" class="cart_title">Order Summary</th>
+            <th width="5%"></th>
+            <th width="8%"></th>
+            <th width="5%"></th>
+            <th width="5%"></th>
+          </tr>
+          <tbody class="cartRenderArea">
+            <tr>
+              <td>
+                <div class="cartItem-title">
+                  <img src="img/Rectangle 69.jpg" alt="" />
+                  <p>Classice Sofa</p>
+                </div>
+              </td>
+              <td>NT$12,000</td>
+              <td class="qty_ctrl">
+                <a href="#">-</a>
+                <a class="qty">1</a>
+                <a href="#">+</a>
+              </td>
+              <td>NT$12,000</td>
+              <td class="discardBtn_side">
+                <i class="fa-solid fa-trash-can"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cartItem-title">
+                  <img src="img/Rectangle 69.jpg" alt="" />
+                  <p>Classice Sofa</p>
+                </div>
+              </td>
+              <td>NT$12,000</td>
+              <td class="qty_ctrl">
+                <a href="#">-</a>
+                <a class="qty">1</a>
+                <a href="#">+</a>
+              </td>
+              <td>NT$12,000</td>
+              <td class="discardBtn_side">
+                <i class="fa-solid fa-trash-can"></i>
+              </td>
+            </tr>
+          </tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <p>Subtotal</p>
+            </td>
+            <td class="subtotal">NT$24,000</td>
+          </tr>
+        </table>
+        <a class="checkout_btn_side" href="cart.html">Check Out</a>
+      </div>
+    </div>
+    <div class="out">
+      <!------------------- 左側選單 ------------------->
+      <div class="side-menu">
+        <!-- <form>
+          <input type="search" placeholder="Search" />
+          <a href=""><i class="fa fa-search"></i></a>
+        </form> -->
+        <nav>
+          <a href="#" class="filter_category" id="all"> All </a>
+          <a href="#" class="filter_category" id="meetingRoom">
+            MEETING ROOM
+          </a>
+          <a href="#" class="filter_category" id="office"> OFFICE </a>
+          <a href="#" class="filter_category" id="staffLounge">
+            STAFF LOUNGE
+          </a>
+        </nav>
+      </div>
+      <!----------------- 右側作品集主要區域 ----------------->
+      <div class="portfolio_main">
+        <div class="grid grid1">
+          <div class="grid_item grid1_1">
+            <img src="img/port1.jpg" alt="" data-id="1" />
+          </div>
+          <div class="grid_item grid1_2">
+            <img src="img/port2.jpg" alt="" data-id="2" />
+          </div>
+          <div class="grid_item grid1_3">
+            <img src="img/port3.jpg" alt="" data-id="3" />
+          </div>
+        </div>
+        <div class="grid grid2">
+          <div class="grid_item grid2_1">
+            <img src="img/port2_1.jpg" alt="" data-id="4" />
+          </div>
+          <div class="grid_item grid2_2">
+            <img src="img/port2_2.jpg" alt="" data-id="5" />
+          </div>
+          <div class="grid_item grid2_3">
+            <img src="img/port2_3.jpg" alt="" data-id="6" />
+          </div>
+        </div>
+        <div class="grid grid3">
+          <div class="grid_item grid3_1">
+            <img src="img/port3_1.jpg" alt="" data-id="7" />
+          </div>
+          <div class="grid_item grid3_2">
+            <img src="img/port3_2.jpg" alt="" data-id="8" />
+          </div>
+          <div class="grid_item grid3_3">
+            <img src="img/port3_3.jpg" alt="" data-id="9" />
+          </div>
+        </div>
+      </div>
+      <!------------------燈箱 ------------------>
+      <div id="lightbox" class="none">
+        <article>
+          <div class="modal_img">
+            <img src="img/port1.jpg" alt="" />
+          </div>
+          <div class="modal_content">
+            <img src="img/btn_modal_close.png" alt="" class="btn_modal_close" />
+            <h3 class="modal_title">ABC studio</h3>
+            <div class="modal_text">
+              <p>
+                <i class="fa-regular fa-calendar"></i>
+                PROJECT YEAR
+                <br />
+                <span>2022</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-house"></i>
+                AREA
+                <br />
+                <span>80P</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-user"></i>
+                PROJECT LEADER
+                <br />
+                <span>John Chen</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-tag"></i>
+                OFFICE
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!------------JQ--------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(function () {
+        // 漢堡選單
+
+        $(".hamburger").click(function () {
+          console.log(123);
+          $(".menu ul").toggleClass("open");
+        });
+      });
+    </script>
+    <script src="js/addToCart.js"></script>
+    <script src="js/portfolio.js"></script>
+  </body>
+</html>

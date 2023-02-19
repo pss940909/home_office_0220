@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Office Interior Design Co.</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!----------- AOS  ----------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- webpage icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!----------- my CSS  ----------->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!------------------------ loader -------------------------->
+    <div id="loader">
+      <div class="loading">
+        <img src="./img/white_logo.png" alt="" />
+        <div id="load">
+          <div>E</div>
+          <div>C</div>
+          <div>I</div>
+          <div>F</div>
+          <div>F</div>
+          <div>O</div>
+          <div>E</div>
+          <div>M</div>
+          <div>O</div>
+          <div>H</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <!------------------- header ------------------->
+
+      <div class="banner">
+        <!---------------- Swiper html 模板 ---------------->
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- header -->
+          <header class="container">
+            <!-------------------- 左側選單 -------------------->
+            <div class="logo">
+              <!--------------------- logo --------------------->
+              <h1>
+                <a href="index.html"><img src="img/white_logo.png" alt="" /></a>
+              </h1>
+            </div>
+
+            <!--------右側選單------>
+            <div class="menu">
+              <!--------漢堡選單------>
+              <i class="fa-solid fa-bars fa-lg hamburger none"></i>
+              <!------------ 導覽列 ---------->
+              <ul class="nav_list">
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contactus.html">CONSULT</a></li>
+                <li>
+                  <a href="#" id="cartBtn"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="signin.html"><i class="fa-solid fa-user"></i></a>
+                </li>
+              </ul>
+            </div>
+          </header>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide1">
+              <img src="img/slide1.png" alt="" />
+            </div>
+            <div class="swiper-slide slide2">
+              <img src="img/slide2.png" alt="" />
+            </div>
+            <div class="swiper-slide slide3">
+              <img src="img/slide3.png" alt="" />
+            </div>
+            <div class="swiper-slide slide4">
+              <img src="img/slide4.png" alt="" />
+            </div>
+            <div class="swiper-slide slide5">
+              <img src="img/slide5.png" alt="" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button swiper-button-prev"></div>
+          <div class="swiper-button swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </div>
+
+      <!-- 購物車側邊選單 -->
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <div class="overflowWrap">
+          <table class="shoppingCart-sideTable">
+            <tr>
+              <th width="10%" class="cart_title">Order Summary</th>
+              <th width="5%"></th>
+              <th width="8%"></th>
+              <th width="5%"></th>
+              <th width="5%"></th>
+            </tr>
+            <tbody class="cartRenderArea">
+              <tr>
+                <td>
+                  <div class="cartItem-title">
+                    <img src="img/Rectangle 69.jpg" alt="" />
+                    <p>Classice Sofa</p>
+                  </div>
+                </td>
+                <td>NT$12,000</td>
+                <td class="qty_ctrl">
+                  <a href="#">-</a>
+                  <a class="qty">1</a>
+                  <a href="#">+</a>
+                </td>
+                <td>NT$12,000</td>
+                <td class="discardBtn_side">
+                  <i class="fa-solid fa-trash-can"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cartItem-title">
+                    <img src="img/Rectangle 69.jpg" alt="" />
+                    <p>Classice Sofa</p>
+                  </div>
+                </td>
+                <td>NT$12,000</td>
+                <td class="qty_ctrl">
+                  <a href="#">-</a>
+                  <a class="qty">1</a>
+                  <a href="#">+</a>
+                </td>
+                <td>NT$12,000</td>
+                <td class="discardBtn_side">
+                  <i class="fa-solid fa-trash-can"></i>
+                </td>
+              </tr>
+            </tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p>Subtotal</p>
+              </td>
+              <td class="subtotal">NT$24,000</td>
+            </tr>
+          </table>
+          <a href="cart.html" class="checkout_btn_side">Check Out</a>
+        </div>
+      </div>
+      <!------------------- About Us --------------------->
+      <div class="about_us">
+        <h2 class="sub_title" data-aos="fade-down" data-aos-duration="1500">
+          ABOUT US
+        </h2>
+        <div class="about_content">
+          <div class="about_img" data-aos="fade-down" data-aos-duration="1500">
+            <div
+              class="about_decoline"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            ></div>
+          </div>
+          <div class="about_text" data-aos="fade-up" data-aos-duration="1500">
+            <p>
+              Home Office Interiror Design Co. was founded on the premise that
+              design can be utilized not only to make spaces more aesthetically
+              pleasing, but also to make spaces more functional. It is our firm
+              belief that the end users should be at the center of any design
+              process.
+            </p>
+            <a href="aboutus.html" class="see_more_btn">SEE MORE</a>
+          </div>
+        </div>
+      </div>
+
+      <!------------------- 作品集 --------------------->
+      <div class="portfolio">
+        <h2
+          class="sub_title"
+          data-aos="fade"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
+          PORTFOLIO
+        </h2>
+        <div class="portfolio_cards container swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./img/Rectangle 15.jpg"
+                alt=""
+                onclick="window.location.href='portfolio.html';"
+              />
+              <span>meeting room</span>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/port_office.jpg"
+                alt=""
+                onclick="window.location.href='portfolio.html';"
+              />
+              <span>meeting room</span>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/port_staff_bg.jpg"
+                alt=""
+                onclick="window.location.href='portfolio.html';"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/port1.jpg"
+                alt=""
+                onclick="window.location.href='portfolio.html';"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/port2.jpg"
+                alt=""
+                onclick="window.location.href='portfolio.html';"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/port2_1.jpg"
+                alt=""
+                onclick="window.location.href='portfolio.html';"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/port2_2.jpg"
+                alt=""
+                onclick="window.location.href='portfolio.html';"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/port2_3.jpg"
+                alt=""
+                onclick="window.location.href='portfolio.html';"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/port3.jpg"
+                alt=""
+                onclick="window.location.href='portfolio.html';"
+              />
+            </div>
+          </div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      <!------------------- 最新消息 --------------------->
+      <div class="news">
+        <div class="news_content container">
+          <div
+            class="news_left"
+            onclick="window.location.href='news.html';"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <h2 class="sub_title">NEWS</h2>
+            <h4>
+              Best Interior
+              <br />
+              Designers Sydney
+            </h4>
+            <p>2022.12.26</p>
+          </div>
+          <div
+            class="news_right"
+            onclick="window.location.href='news.html';"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
+            <h4>
+              Best Interior
+              <br />
+              Designers New York
+            </h4>
+            <p>2022.12.31</p>
+          </div>
+        </div>
+      </div>
+      <!------------------- 跑馬燈 --------------------->
+      <div class="marquee">
+        <div class="track">
+          <div class="content">
+            MAKE YOUR OFFICE FEEL LIKE HOME.MAKE YOUR OFFICE FEEL LIKE HOME.
+          </div>
+        </div>
+      </div>
+      <!------------------- 商店 --------------------->
+      <div class="shop">
+        <ul class="shop_list">
+          <li class="sofa"><span class="none">SOFA</span></li>
+          <li class="desk"><span class="none">DESK</span></li>
+          <li class="chair"><span class="none">CHAIR</span></li>
+        </ul>
+      </div>
+
+      <!------------------- 表尾預約表單 --------------------->
+      <div class="contact_us">
+        <div class="container">
+          <h2 class="sub_title">Contact Us</h2>
+          <div class="contact_us_content">
+            <!-- 左側聯絡資訊 -->
+            <div class="left-info">
+              <p class="form_text">
+                Addresss: Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Nunc vulputate libero et velit interdum, ac aliquet odio
+                mattis.
+              </p>
+              <p class="form_text">Tel: 0223840023</p>
+              <p class="form_text">Fax: 0223840024</p>
+              <p class="form_text">Email: home_office@gmail.com</p>
+              <p class="form_text">Mon - Fri : 09:00-18:00</p>
+              <div class="social_media_link">
+                <a href=""> <i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+              </div>
+            </div>
+            <!-- 右側表單 -->
+            <div class="right-form">
+              <form action="">
+                <ul>
+                  <li>
+                    <label for="name">Name </label>
+                    <input type="text" id="name" name="user_name" />
+                  </li>
+                  <li>
+                    <label for="email">Email </label>
+                    <input type="text" id="email" name="user_email" />
+                  </li>
+                  <li>
+                    <label for="phone">Phone </label>
+                    <input type="text" id="phone" name="user_phone" />
+                  </li>
+                  <li>
+                    <label for="message">Message </label>
+                    <textarea
+                      name="user_message"
+                      id="message"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </li>
+                </ul>
+                <input type="submit" value="Submit" class="submit_btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------------- 表尾 --------------------->
+      <footer>
+        <p>
+          本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。參考資源:
+          O&D home decor, the interior design corp.
+        </p>
+      </footer>
+    </div>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <!-----------AOS------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--------- jquery---------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!------------My JS----->
+    <script src="js/addToCart.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+@import url(reset.css);
+@import url(utilities.css);
+@import url(header.css);
+@import url(banner_bg.css);
+@import url(footer.css);
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+html,
+body {
+  height: 100%;
+}
+
+header {
+  position: sticky;
+}
+
+/* ------------news_content------ */
+.news_content {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.bgimg {
+  width: 40%;
+  min-height: 100vh;
+}
+.bgimg img {
+  object-fit: cover;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.news_text {
+  width: 60%;
+  box-sizing: border-box;
+  padding-left: 45px;
+  padding-bottom: 100px;
+  font-family: serif;
+  background-color: #f8f8f8;
+}
+
+.news_title {
+  font-size: 56px;
+  font-style: italic;
+  font-family: Dancing Script;
+  padding-top: 120px;
+}
+.news_date {
+  font-size: 18px;
+  font-style: italic;
+  font-family: Dancing Script;
+  padding-bottom: 64px;
+  color: #ccc;
+}
+.news_date span {
+  margin-right: 20px;
+}
+.news_para {
+  font-size: 24px;
+  line-height: 2;
+  text-indent: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.news_text ul {
+  padding: 40px;
+}
+.news_text ul li {
+  font-size: 24px;
+  line-height: 2;
+  list-style: disc;
+  color: black;
+}
+.para_list img {
+  width: 200px;
+}
+img {
+  width: 300px;
+  float: right;
+  margin-left: 20px;
+}
+
+.quote {
+  font-size: 21px;
+  font-style: italic;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  line-height: 1.5;
+  color: #ccc;
+  font-weight: bolder;
+  text-indent: 20px;
+}
+
+@media screen and (max-width: 996px) {
+  .bgimg {
+    width: 50%;
+  }
+  .news_text {
+    width: 50%;
+  }
+  .news_title {
+    padding-top: 80px;
+    font-size: 36px;
+  }
+  .news_date {
+    font-size: 16px;
+    padding-bottom: 36px;
+  }
+  .news_para {
+    font-size: 18px;
+  }
+  img {
+    width: 180px;
+  }
+  .quote {
+    font-size: 18px;
+  }
+  .news_text ul li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .bgimg {
+    width: 0%;
+  }
+  .news_text {
+    width: 100%;
+  }
+}

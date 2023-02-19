@@ -1,0 +1,316 @@
+@import url(reset.css);
+@import url(utilities.css);
+@import url(header.css);
+@import url(banner_bg.css);
+@import url(footer.css);
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+.out {
+  display: flex;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+.side-menu {
+  width: 25%;
+  height: auto;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.9;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #5b5353;
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  /* outline: 1px solid red; */
+  border-bottom: 1px solid black;
+  font-weight: 700;
+}
+nav a:hover {
+  background-color: #dcdcdc;
+}
+
+.filter_category.active {
+  background-color: #dcdcdc;
+}
+
+/* --------------------作品集---------------------- */
+.portfolio_main {
+  padding-left: 10px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+
+.grid1 {
+  margin-top: 10px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  box-sizing: border-box;
+}
+
+.grid1_1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  box-sizing: border-box;
+}
+
+.grid1_2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  box-sizing: border-box;
+}
+.grid1_3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  box-sizing: border-box;
+}
+
+.grid_item {
+  overflow: hidden;
+}
+
+.grid_item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.grid_item img:hover {
+  transition: 0.8s;
+  transform: scale(1.05);
+}
+
+.grid2 {
+  margin-top: 10px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid2_1 {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+.grid2_2 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.grid2_3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.grid3 {
+  margin-top: 10px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid3_1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.grid3_2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.grid3_3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+/*---------------- 燈箱 --------------------*/
+#lightbox {
+  /*   border: 1px solid red; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, 0.6);
+}
+.none {
+  display: none;
+}
+
+/* 元素 article 置中及基本樣式 */
+#lightbox > article {
+  background-color: #fff;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.modal_content {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.modal_title {
+  padding-top: 30px;
+  font-size: 28px;
+  max-width: 200px;
+}
+
+.btn_modal_close {
+  width: 40px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.modal_text {
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.modal_text p {
+  padding-top: 16px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.modal_text i {
+  margin-right: 5px;
+}
+.modal_text span {
+  padding-top: 5px;
+  font-weight: 200;
+}
+.modal_img {
+  width: 75%;
+}
+.modal_img img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center center;
+}
+.margin_bottom {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 996px) {
+  .grid1,
+  .grid2,
+  .grid3 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .grid1_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .grid1_2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .grid1_3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .grid2_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .grid2_2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .grid2_3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .grid3_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .grid3_2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .grid3_3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #lightbox > article {
+    width: 80%;
+  }
+  .modal_content {
+    margin-left: 20px;
+  }
+  .btn_modal_close {
+    width: 25px;
+  }
+  .modal_title {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #lightbox > article {
+    flex-direction: column;
+  }
+  .modal_img {
+    width: 100%;
+  }
+  .modal_content {
+    width: 100%;
+  }
+  .modal_content {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .out {
+    flex-direction: column;
+  }
+  .side-menu {
+    width: 100%;
+    padding: 0;
+  }
+  nav a {
+    text-align: center;
+    line-height: 50px;
+    padding: 0;
+    font-size: 16px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  nav a:first-child {
+    border-top: 1px solid #dcdcdc;
+  }
+  .portfolio_main {
+    width: 100%;
+  }
+}

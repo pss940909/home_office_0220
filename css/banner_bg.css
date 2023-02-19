@@ -1,0 +1,57 @@
+/* ----------------------banner -------------------*/
+.banner {
+  background-image: url(../img/banner_bg.jpg);
+  height: 375px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mask {
+  height: 375px;
+  width: 100%;
+  position: relative;
+}
+.mask h2 {
+  opacity: 1;
+  color: black;
+  font-size: 75px;
+  position: absolute;
+  font-weight: 700;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 920px) {
+  .mask {
+    width: 35%;
+  }
+  .mask h2 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .mask {
+    width: 100%;
+  }
+  .mask h2 {
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+    right: auto;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .banner {
+    height: 200px;
+  }
+  .mask {
+    height: 200px;
+  }
+  .mask h2 {
+    font-size: 36px;
+  }
+}

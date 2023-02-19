@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- webpage icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- myCSS -->
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <div class="out">
+      <div class="wrapper">
+        <div class="form_text">
+          <a href="index.html"
+            ><img src="img/logo.png" alt="logo" class="logo"
+          /></a>
+          <form action="" class="signup_form">
+            <a href="signin.html" class="back"> < < Back</a>
+            <ul class="signin_list">
+              <li class="name">
+                <div class="first_name">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" />
+                </div>
+                <div class="last_name">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" />
+                </div>
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <br />
+                <input type="text" id="email" name="email" />
+              </li>
+              <li>
+                <label for="password">Phone</label>
+                <br />
+                <input type="text" id="Phone" name="Phone" />
+              </li>
+              <li>
+                <label for="password">Password</label>
+                <br />
+                <input type="password" id="password" name="password" />
+              </li>
+              <li>
+                <label for="check_password">Confirm Password</label>
+                <br />
+                <input
+                  type="password"
+                  id="check_password"
+                  name="check_password"
+                />
+              </li>
+            </ul>
+            <a href="#" class="signin_btn">Sign Up</a>
+          </form>
+        </div>
+        <div class="form_img"></div>
+      </div>
+    </div>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/signup.js"></script>
+  </body>
+</html>

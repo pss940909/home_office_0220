@@ -1,0 +1,81 @@
+@import url(reset.css);
+@import url(utilities.css);
+@import url(header.css);
+@import url(banner_bg.css);
+@import url(footer.css);
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  background-image: url(../img/news_banner_bg.jpg);
+  background-position: left top;
+}
+.banner h2 {
+  color: white;
+}
+.grid {
+  height: auto;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  box-sizing: border-box;
+}
+.grid-item {
+  width: 30%;
+  border: 1px solid #ccc;
+  margin: 15px;
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.7s;
+}
+.grid-item:hover {
+  box-shadow: 1.5px 1.5px #dcdcdc;
+  transform: translate(0, 3px);
+  transition: all 0.7s;
+}
+.add_to_fav {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.grid-item img {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+.card-content {
+  padding: 15px;
+}
+.card-content .date {
+  font-size: 14px;
+  font-family: Dancing Script;
+}
+.card-content h3 {
+  font-family: Dancing Script;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 820px) {
+  .grid-item {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-item {
+    margin: 20px;
+    width: 90%;
+  }
+  .right-form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    display: none;
+  }
+}

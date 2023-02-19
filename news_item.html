@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!----------------- AOS ----------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- webpage icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- myCSS -->
+    <link rel="stylesheet" href="css/news_item.css" />
+  </head>
+  <body>
+    <!------------------- header ------------------->
+    <header class="container">
+      <!-------------------- 左側選單 -------------------->
+      <div class="logo">
+        <!--------------------- logo --------------------->
+        <h1>
+          <a href="index.html"><img src="img/logo.png" alt="" /></a>
+        </h1>
+      </div>
+
+      <!------------------- 右側icon --------------------->
+      <div class="menu">
+        <!--------漢堡選單------>
+        <i class="fa-solid fa-bars fa-lg hamburger none"></i>
+        <!--------------------- 導覽列 --------------------->
+        <ul>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="contactus.html">CONSULT</a></li>
+          <li>
+            <a href="#" id="cartBtn"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+          <li>
+            <a href="signin.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- 購物車側邊選單 -->
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <div class="overflowWrap">
+        <table class="shoppingCart-sideTable">
+          <tr>
+            <th width="10%" class="cart_title">Order Summary</th>
+            <th width="5%"></th>
+            <th width="8%"></th>
+            <th width="5%"></th>
+            <th width="5%"></th>
+          </tr>
+          <tbody class="cartRenderArea">
+            <tr>
+              <td>
+                <div class="cartItem-title">
+                  <img src="img/Rectangle 69.jpg" alt="" />
+                  <p>Classice Sofa</p>
+                </div>
+              </td>
+              <td>NT$12,000</td>
+              <td class="qty_ctrl">
+                <a href="#">-</a>
+                <a class="qty">1</a>
+                <a href="#">+</a>
+              </td>
+              <td>NT$12,000</td>
+              <td class="discardBtn_side">
+                <i class="fa-solid fa-trash-can"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cartItem-title">
+                  <img src="img/Rectangle 69.jpg" alt="" />
+                  <p>Classice Sofa</p>
+                </div>
+              </td>
+              <td>NT$12,000</td>
+              <td class="qty_ctrl">
+                <a href="#">-</a>
+                <a class="qty">1</a>
+                <a href="#">+</a>
+              </td>
+              <td>NT$12,000</td>
+              <td class="discardBtn_side">
+                <i class="fa-solid fa-trash-can"></i>
+              </td>
+            </tr>
+          </tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <p>Subtotal</p>
+            </td>
+            <td class="subtotal">NT$24,000</td>
+          </tr>
+        </table>
+        <a class="checkout_btn_side" href="cart.html">Check Out</a>
+      </div>
+    </div>
+    <!------------------- news content ------------------->
+    <div class="news_content">
+      <!-- 左側圖 -->
+      <div class="bgimg">
+        <img src="img/news1.jpg" alt="" />
+      </div>
+      <!-- 右側文 -->
+      <div class="news_text">
+        <h2 class="news_title">Style your Office, and your Mind.</h2>
+        <p class="news_date"><span>By Paulina Szyzdek</span>Jun 16,2023</p>
+        <p class="news_para">
+          Spending all this extra time at home really had been a cherry on top
+          of a crazy, strange, eventless year. Us Sydner-siders have been stuck
+          in lockdown for about 12 weeks now, but we are taking our hats off to
+          our Melbourne friends, who have been through this way harder than us.
+          Our thoughts are with you Melburnians!
+        </p>
+
+        <p class="news_para">
+          To liven things up, we wanted to talk all things interior design &
+          styling at home. With all the extra time you are spending at home,
+          perhaps you are sick of your old couch, or your dining chairs have
+          been through it all. You desperately need a re-style, not just for
+          your space, but also for your mental well being.
+        </p>
+        <img
+          src="img/news_item1.jpg"
+          alt=""
+          class="second_img"
+          data-aos="flip-up"
+          data-aos-duration="2000"
+        />
+
+        <p class="quote">
+          “We shape our buildings and afterwards our buildings shape us” --
+          Winston Churchill, 1943
+        </p>
+
+        <p class="news_para">
+          Remember that your home is supposed to be a place of relaxation,
+          comfort, healing and reflection. It should not be a source of anxiety
+          or stress. During the last 2 years, we have heard many of our clients
+          and friends complaining about their home feeling quite dull,
+          uninspiring and often quite depressing, leaving them feeling with low
+          moods and an increase of mental health issues.
+        </p>
+        <img
+          src="img/news_item2.jpg"
+          alt=""
+          data-aos="flip-up"
+          data-aos-duration="2000"
+        />
+        <img
+          src="img/news_item3.jpg"
+          alt=""
+          data-aos="flip-up"
+          data-aos-duration="2000"
+          data-aos-delay="500"
+        />
+
+        <p class="news_para">
+          Did you know you environments can affect your mental health? This is
+          the same way colours can affect mood and evoke emotions, and even
+          furniture placement and space layout (Feng Shui) can harmonize your
+          environments.
+        </p>
+
+        <p class="news_para">
+          This brings us to Neuroarchitecture, a study of the body and brain and
+          how it all responds to the built environment (Ian Ritchie, 2020). It
+          is broke down into 4 seperate principles:
+        </p>
+
+        <ul class="para_list">
+          <li>Sensation & Perception</li>
+          <li>Learning & Memory</li>
+          <li>Decision Making</li>
+          <li>New Experiences</li>
+        </ul>
+
+        <p class="news_para">
+          This type of design style is most generally applied to commercial
+          spaces, such as corporate workspaces, schools, clinics and hospitals.
+          These principles used in Neuroarchitecture can also be applied to
+          designs within your home, which can ultimately help create positive
+          environments in unexpected ways. We need more designers applying these
+          principles within the home. As we are spending so much time at home,
+          realistically this is the time we need these principles the most.
+        </p>
+        <p class="quote">
+          “What’s distinct about neuroarchitecture is that we’re now approaching
+          a time when our understanding of brain function has progressed to the
+          point where we can start to say sensible things about its relationship
+          with architecture and design” -- Dr Colin Ellard, author and professor
+          of cognitive neuroscience. (Houzz, 2018)
+        </p>
+        <img
+          src="img/news_item4.jpg"
+          alt=""
+          data-aos="flip-up"
+          data-aos-duration="2000"
+        />
+        <p class="news_para">
+          The idea that design can help create positive environments and
+          ultimately help boost mental health issues is very powerful. This is
+          why we are so passionate about providing affordable interior design
+          services to our clients as we believe everyone should have the chance
+          to be able to create a uplifting home environment that will help
+          create a positive, safe and happy space, not just for you and for the
+          whole family.
+        </p>
+        <p class="news_para">
+          So can my home interior design actually help with my mental health?
+          The answer is YES, YES, YES!
+        </p>
+        <p class="news_para">
+          Yes, that's all very well, but what the hell do those principles mean
+          and how do I apply them in my home with no design knowledge. This is
+          where we come in to help and offer you our tips and tricks over the
+          next few weeks to help you style your home and your mind using the 4
+          Neuroarchitecture principles.
+        </p>
+        <img
+          src="img/news_item5.jpg"
+          alt=""
+          data-aos="flip-up"
+          data-aos-duration="2000"
+        />
+        <img
+          src="img/news_item6.jpg"
+          alt=""
+          data-aos="flip-up"
+          data-aos-duration="2000"
+          data-aos-delay="500"
+        />
+        <p class="news_para">
+          Please stay tuned as we will be releasing a blog post every week,
+          starting next week for the next 4 weeks (wow that's a bit of a tongue
+          twister). We will be starting with Sensation & Perception and will be
+          providing you simple tips and tricks to help you aim to achieve a
+          positive environment within your home.
+        </p>
+        <p class="news_para">
+          We are so excited to be doing this. If you have any questions please
+          contact us with your specific design questions relating to this post
+          and we will aim to answer your question in the next blog post.
+        </p>
+        <p class="news_para">
+          Until then, please stay safe and healthy everyone!
+        </p>
+      </div>
+    </div>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <!----------------- AOS ----------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!------------JQ--------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/addToCart.js"></script>
+    <script>
+      window.onload = function () {
+        AOS.init();
+        $(function () {
+          // 漢堡選單
+
+          $(".hamburger").click(function () {
+            console.log(123);
+            $(".menu ul").toggleClass("open");
+          });
+        });
+      };
+    </script>
+  </body>
+</html>

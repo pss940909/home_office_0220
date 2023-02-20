@@ -131,13 +131,13 @@ body {
     object-position: center center;
   }
   .swiper .swiper-slide:nth-child(2) img {
-    object-position: -500px center;
+    object-position: -580px center;
   }
   .swiper .swiper-slide:nth-child(3) img {
     object-position: -20px center;
   }
   .swiper .swiper-slide:nth-child(4) img {
-    object-position: -60px center;
+    object-position: -90px center;
   }
   .swiper .swiper-slide:nth-child(5) img {
     object-position: -175px center;
